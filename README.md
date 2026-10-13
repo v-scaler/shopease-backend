@@ -21,18 +21,14 @@ A robust RESTful API built with Django and Django REST Framework (DRF) featuring
     python -m venv venv
     source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
-3. **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-
-4. **Configure Environment Variables:**
+3. **Configure Environment Variables:**
     Create a .env file in the root directory and add your credentials:
     ```env
     SECRET_KEY=your_django_secret_key
     RAZORPAY_KEY_ID=your_razorpay_key_id
     RAZORPAY_KEY_SECRET=your_razorpay_key_secret
 
-5. **Run migrations and start the server:**
+4. **Run migrations and start the server:**
     ```bash
     python manage.py migrate
     python manage.py runserver
