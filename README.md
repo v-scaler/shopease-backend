@@ -13,7 +13,7 @@ A robust RESTful API built with Django and Django REST Framework (DRF) featuring
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/shopease-backend.git](https://github.com/your-username/shopease-backend.git)
+   git clone https://github.com/v-scaler/shopease-backend.git
    cd shopease-backend
 
 2. **Create and activate a virtual environment:**
