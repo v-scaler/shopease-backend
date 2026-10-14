@@ -1,3 +1,5 @@
+import os
+
 """
 Django settings for shopease project.
 
@@ -136,5 +138,5 @@ REST_FRAMEWORK = {
 }
 
 # Razorpay Settings
-RAZORPAY_KEY_ID = 'rzp_test_your_key_id_here'
-RAZORPAY_KEY_SECRET = 'your_key_secret_here'
+RAZORPAY_KEY_ID = os.environ.get('RAZORPAY_KEY_ID', 'rzp_test_your_key_id_here')
+RAZORPAY_KEY_SECRET = os.environ.get('RAZORPAY_KEY_SECRET', 'your_key_secret_here')
