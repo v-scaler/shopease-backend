@@ -43,3 +43,17 @@ A robust RESTful API built with Django and Django REST Framework (DRF) featuring
 | `/api/cart/` | `GET`, `POST` | Authenticated | Manage user shopping cart items |
 | `/api/orders/create_razorpay_order/` | `POST` | Authenticated | Converts cart items into an order and initializes a Razorpay order |
 | `/api/orders/verify_payment/` | `POST` | Authenticated | Verifies HMAC-SHA256 payment signature and marks order as Paid |
+
+### 🌐 API Root & Admin Interface
+When the server is running at `http://127.0.0.1:8000/`, the root browseable API provides links to key resources:
+
+```json
+{
+    "categories": "http://127.0.0.1:8000/api/categories/",
+    "products": "http://127.0.0.1:8000/api/products/",
+    "cart": "http://127.0.0.1:8000/api/cart/",
+    "orders": "http://127.0.0.1:8000/api/orders/"
+}
+```
+
+* **Django Admin Panel:** Available at `http://127.0.0.1:8000/admin/`, allowing superusers to manage product inventories, user groups, categories, cart states, orders, and payment records.
